@@ -1,20 +1,14 @@
-import random
+import random as r
+import string
+def generate_password(length):
+    characters = string.ascii_letters + string.digits + string.punctuation
+    code = " "
 
-number = random.randint(1,100)
-attempts = 0
+    for i in range(length):
+        code += r.choice(characters)
 
-print("Guess the number between 1 to 100")
+    return code
 
-while True:
-    guess=int(input("Enter your Guess :"))
-    attempts += 1
-
-    if guess > number :
-        print("Too High")
-    elif guess < number:
-        print("Too Low")
-    else:
-        print("Correct !!")
-        print("No of Attempts :",attempts)
-        break
-
+length = int(input("Enter the password's Length : "))
+password = generate_password(length)
+print("Generated Password : ", password)

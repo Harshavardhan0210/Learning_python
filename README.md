@@ -1,34 +1,34 @@
-# Number Guessing Game (Python)
+# Password Generator (Python)
 
-A simple Python game where the computer generates a random number and the user tries to guess it with hints.
+A simple and powerful Python tool that generates strong random passwords using letters, numbers, and special characters.
 
 ---
 
 ## Features
-- Random number generation
-- Hint system (Too High / Too Low)
-- Attempt counter
-- Continuous loop until correct guess
+- Generate secure random passwords
+- User-defined password length
+- Uses letters, digits, and symbols
+- Simple and beginner-friendly code
 
 ---
 
 ## Concepts Used
 - Python `random` module
-- `while` loop
-- `if-elif-else` conditions
+- Python `string` module
+- Functions
+- Loops (`for`)
 - User input handling
-- Increment operator (`+=`)
 
 ---
 
 ## How It Works
-1. The computer generates a random number between 1 and 100
-2. The user enters a guess
-3. The program gives hints:
-   - Too High
-   - Too Low
-4. The loop continues until the correct guess
-5. Total attempts are displayed
+1. User enters desired password length
+2. Program creates a pool of characters:
+   - Letters (a-z, A-Z)
+   - Numbers (0-9)
+   - Symbols (!@#$...)
+3. Random characters are selected
+4. Password is generated and displayed
 
 ---
 
@@ -38,5 +38,4 @@ A simple Python game where the computer generates a random number and the user t
 Make sure Python is installed on your system
 
 ### Step 2: Run the program
-Open terminal and run:
-python main.py
+Open terminal and run: python main.py
